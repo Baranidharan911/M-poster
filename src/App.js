@@ -46,7 +46,7 @@ function App() {
             />
           </div>
           <p className="empowerment">I'm running</p>
-          <h2 className="hospital-title highlight">SLH 10K!</h2>
+          <h2 className="hospital-titles highlight">SLH 10K!</h2>
           <p className="empowerment">Are you?</p>
         </div>
 
@@ -65,36 +65,57 @@ function App() {
           <section className="categories">
             <h4 className="fees-header">Categories and Fees Details:</h4>
             <ul className="fees-list">
-              <li>5km Family Run (Non-Timed): ₹555 + Processing fees</li>
-              <li>5km Timed Run: ₹666 + Processing fees</li>
-              <li>10K Timed Run: ₹799 + Processing fees</li>
+              <li>5km Family Run (Non-Timed)</li>
+              <p>₹555 + Processing fees</p>
+              <li>5km Timed Run</li>
+              <p>₹666 + Processing fees</p>
+              <li>10K Timed Run</li>
+              <p>₹799 + Processing fees</p>
             </ul>
           </section>
         </div>
       </div>
 
       <footer className="footer">
-  <div className="footer-top">
-    <div className="curved-section">
-      <span className="icon"><img src="/dummy-tshirt-icon.png" alt="T-Shirt" /><p>T-Shirt</p></span>
-      <span className="icon"><img src="/dummy-medal-icon.png" alt="Medal" /><p>Medal</p></span>
-      <span className="icon"><img src="/dummy-breakfast-icon.png" alt="Breakfast" /><p>Breakfast</p></span>
-      <span className="icon"><img src="/dummy-refreshment-icon.png" alt="Refreshment" /><p>Refreshment</p></span>
-    </div>
-  </div>
+        {/* Curved Section with Icons */}
+        <div className="footer-top">
+          <div className="curved-section">
+            <span className="icon"><img src="/dummy-tshirt-icon.png" alt="T-Shirt" /><p>T-Shirt</p></span>
+            <span className="icon"><img src="/dummy-medal-icon.png" alt="Medal" /><p>Medal</p></span>
+            <span className="icon"><img src="/dummy-breakfast-icon.png" alt="Breakfast" /><p>Breakfast</p></span>
+            <span className="icon"><img src="/dummy-refreshment-icon.png" alt="Refreshment" /><p>Refreshment</p></span>
+          </div>
+        </div>
 
-  <div className="footer-bottom">
-    <p className="footer-text">
-      <span className="location-icon">📍</span> Start & Finish Point: Sri Lakshmi College, MTP Road, Thudiyalur
-    </p>
-    <div className="footer-contact">
-      <a href="https://www.srilakshmimarathon.com" className="footer-link">
-        🌐 www.srilakshmimarathon.com
-      </a>
-      <span className="phone-icon">📞</span> +91 89259 00895 | +91 98434 11231
-    </div>
-  </div>
-</footer>
+        {/* Footer Content */}
+        <div className="footer-bottom">
+          {/* Left Section - Location */}
+          <div className="footer-left">
+            <p className="footer-text">Start & Finish Point</p>
+            <p className="footer-subtext">
+              <span className="location-icon">📍</span> Sri Lakshmi College, MTP Road, Thudiyalur
+            </p>
+          </div>
+
+          {/* Right Section - QR Code */}
+          <div className="footer-right">
+            <div className="qr-code">
+              <img src="/dummy-qr-code.png" alt="QR Code" />
+            </div>
+            <p className="qr-text">Scan for Registration</p>
+          </div>
+        </div>
+
+            {/* Center Section - Website & Contact */}
+      <div className="footer-center">
+        <a href="https://www.srilakshmimarathon.com" className="footer-link">
+          🌐 www.srilakshmimarathon.com
+        </a>
+        <p className="footer-subtext">
+          <span className="phone-icon">📞</span> +91 89259 00895 | +91 98434 11231
+        </p>
+      </div>
+      </footer>
 
     </div>
   );
