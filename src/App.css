@@ -32,7 +32,7 @@
   display: inline-block;
   background-color: #0066cc; /* Blue background */
   color: white; /* White text */
-  font-size: 19px;
+  font-size: 14.5px;
   font-weight: bold;
   padding: 5px 15px;
   border-top-right-radius: 0px;
@@ -55,19 +55,22 @@
   align-items: center;
 }
 
-.header-title, .header-subtitle {
-  font-size: 14px;
+.header-title {
+  font-size: 15px;
   font-weight: bold;
   text-transform: uppercase;
   color: #1a1a1a;
 }
 
-/* .header-subtitle{
-  font-size: 12px;
-} */
+.header-subtitle{
+  font-size: 13px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #1a1a1a;
+}
 
 .logo {
-  width: 40px;
+  width: 45px;
   height: auto;
 }
 
@@ -134,12 +137,12 @@
 /* Right Side Section */
 .right-side {
   flex: 1;
-  padding-left: 30px;
+  padding-left: 20px;
   padding-right: 20px;
 }
 
 .run-title {
-  font-size: 50px;
+  font-size: 45px;
   font-weight: bolder;
   color: #6aad28;
 }
@@ -175,14 +178,14 @@
 
 .fees-list {
   list-style-type: none;
-  font-size: 16px;
+  font-size: 14px;
   margin-top: 5px;
   font-weight: 400;
 }
 
 .fees-list p{
   list-style-type: none;
-  font-size: 16px;
+  font-size: 14px;
   margin-top: 0px;
   font-weight: 800;
 }
@@ -203,7 +206,7 @@
   position: absolute;
   top: -20px; /* Moves the curved section above the footer */
   left: 15px;
-  width: 100%;
+  width: 90%;
   display: flex;
   justify-content: flex-start;
 }
@@ -241,14 +244,13 @@
 
 }
 
-
 /* Footer Bottom Section */
 .footer-bottom {
   width: 100%;
   display: flex;
   align-items: flex-end;
   justify-content: center;
-  gap: 50px;
+  gap: 30px;
   padding-top: 0px;
   padding-bottom: 10px;
 }
@@ -264,7 +266,7 @@
 }
 
 .footer-subtext {
-  font-size: 16px;
+  font-size: 14px;
   display: flex;
   align-items: center;
   gap: 5px;
